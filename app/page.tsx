@@ -95,7 +95,7 @@ export default function LandingPage() {
               </h2>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif font-medium leading-[1.1] md:leading-[0.95] lg:leading-[0.9] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-7xl xl:text-8xl font-serif font-medium leading-[1.1] md:leading-[0.95] lg:leading-[1] tracking-tight">
               Sua marca merece <br className="hidden sm:block" />
               uma <span className="text-[#c5a059] italic relative inline-block">
                 landing page
@@ -103,7 +103,7 @@ export default function LandingPage() {
                   initial={{ width: 0 }}
                   whileInView={{ width: '100%' }}
                   transition={{ delay: 1, duration: 1 }}
-                  className="absolute bottom-1 md:bottom-2 lg:bottom-4 left-0 h-[1px] md:h-[2px] lg:h-[3px] bg-[#c5a059]/30"
+                  className="absolute bottom-1 md:bottom-2 lg:bottom-3 left-0 h-[1px] md:h-[2px] lg:h-[2px] bg-[#c5a059]/30"
                 />
               </span> <br className="hidden sm:block" />
               que converte.
@@ -113,7 +113,7 @@ export default function LandingPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 1 }}
-              className="text-sm md:text-xl lg:text-2xl text-gray-400 max-w-2xl lg:max-w-3xl mx-auto font-light leading-relaxed px-4"
+              className="text-sm md:text-xl lg:text-lg xl:text-xl text-gray-400 max-w-2xl lg:max-w-3xl mx-auto font-light leading-relaxed px-4"
             >
               Elevamos o seu posicionamento digital através de design de alto padrão 
               e estratégias de conversão validadas para negócios exclusivos.
@@ -152,29 +152,29 @@ export default function LandingPage() {
       </section>
 
       {/* Specialists Section */}
-      <section id="serviços" className="py-20 md:py-32 lg:py-48 px-4 md:px-12 lg:px-24 bg-[#050505] relative overflow-hidden">
+      <section id="serviços" className="py-20 md:py-32 lg:py-40 px-4 md:px-12 lg:px-16 xl:px-24 bg-[#050505] relative overflow-hidden">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[30vw] h-[30vw] bg-[#c5a059] opacity-[0.02] blur-[150px] rounded-full pointer-events-none" />
         
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-32 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-24 xl:gap-32 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-8 md:space-y-10 lg:space-y-14"
+            className="space-y-8 md:space-y-10 lg:space-y-12"
           >
-            <div className="inline-block border border-[#c5a059]/30 px-4 py-2 lg:px-6 lg:py-3">
+            <div className="inline-block border border-[#c5a059]/30 px-4 py-2 lg:px-5 lg:py-2">
               <span className="text-[9px] md:text-[10px] lg:text-xs tracking-[0.2em] uppercase text-[#c5a059]">
                 Especialistas em conversão
               </span>
             </div>
             
-            <h2 className="text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-serif leading-tight">
+            <h2 className="text-3xl md:text-6xl lg:text-5xl xl:text-7xl font-serif leading-tight">
               Do clique à venda. <br />
               <span className="text-[#c5a059]">Cada pixel</span> tem propósito.
             </h2>
 
-            <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-md lg:max-w-xl">
+            <p className="text-gray-400 text-base md:text-lg lg:text-base xl:text-lg font-light leading-relaxed max-w-md lg:max-w-xl">
               Criamos landing pages para negócios que levam os resultados a sério. 
               Estratégia, design e velocidade em um só lugar para garantir que sua marca se destaque.
             </p>
@@ -233,7 +233,7 @@ export default function LandingPage() {
       </section>
 
       {/* What we deliver (Mustard Section) */}
-      <section id="processo" className="py-20 md:py-32 lg:py-48 px-4 md:px-12 lg:px-24 bg-[#c5a059] text-black overflow-hidden relative">
+      <section id="processo" className="py-20 md:py-32 lg:py-40 px-4 md:px-12 lg:px-16 xl:px-24 bg-[#c5a059] text-black overflow-hidden relative">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px] bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
         
         <div className="max-w-7xl mx-auto">
@@ -241,13 +241,13 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-10 md:space-y-12 lg:space-y-20"
+            className="space-y-10 md:space-y-12 lg:space-y-16"
           >
-            <div className="space-y-4 lg:space-y-6">
+            <div className="space-y-4 lg:space-y-5">
               <span className="text-[9px] md:text-[10px] lg:text-xs tracking-[0.3em] uppercase font-bold opacity-60">
                 OAK STUDIO — O QUE ENTREGAMOS
               </span>
-              <h2 className="text-4xl md:text-7xl lg:text-8xl font-serif font-medium max-w-2xl lg:max-w-4xl leading-tight">
+              <h2 className="text-4xl md:text-7xl lg:text-6xl xl:text-8xl font-serif font-medium max-w-2xl lg:max-w-4xl leading-tight">
                 Tudo que sua página precisa para vender.
               </h2>
             </div>
@@ -288,13 +288,13 @@ export default function LandingPage() {
       </section>
       
       {/* Portfolio Section */}
-      <section id="portfólio" className="py-20 md:py-32 lg:py-48 px-4 md:px-12 lg:px-24 bg-[#050505]">
-        <div className="max-w-7xl mx-auto space-y-12 md:space-y-20 lg:space-y-32">
-          <div className="flex flex-col items-center text-center space-y-4 lg:space-y-6">
+      <section id="portfólio" className="py-20 md:py-32 lg:py-40 px-4 md:px-12 lg:px-16 xl:px-24 bg-[#050505]">
+        <div className="max-w-7xl mx-auto space-y-12 md:space-y-20 lg:space-y-24">
+          <div className="flex flex-col items-center text-center space-y-4 lg:space-y-5">
             <span className="text-[9px] md:text-[10px] lg:text-xs tracking-[0.3em] uppercase text-[#c5a059] font-bold">
               PORTFÓLIO SELECIONADO
             </span>
-            <h2 className="text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-serif">
+            <h2 className="text-3xl md:text-6xl lg:text-5xl xl:text-7xl font-serif">
               Projetos que <span className="text-[#c5a059] italic">geram impacto</span>.
             </h2>
           </div>
@@ -364,21 +364,21 @@ export default function LandingPage() {
       </section>
 
       {/* Quote & Stats */}
-      <section className="py-20 md:py-32 lg:py-48 px-4 md:px-12 lg:px-24 bg-[#0a0a0a] border-t border-white/5">
-        <div className="max-w-7xl mx-auto space-y-20 md:space-y-32 lg:space-y-48">
+      <section className="py-20 md:py-32 lg:py-40 px-4 md:px-12 lg:px-16 xl:px-24 bg-[#0a0a0a] border-t border-white/5">
+        <div className="max-w-7xl mx-auto space-y-20 md:space-y-32 lg:space-y-36">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative pl-8 md:pl-20 lg:pl-32"
+            className="relative pl-8 md:pl-20 lg:pl-24"
           >
             <div className="absolute left-0 top-0 w-1 h-full bg-[#c5a059]" />
-            <blockquote className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-serif italic font-light leading-relaxed max-w-4xl lg:max-w-6xl">
+            <blockquote className="text-xl md:text-4xl lg:text-3xl xl:text-5xl font-serif italic font-light leading-relaxed max-w-4xl lg:max-w-5xl">
               &ldquo;Uma <span className="text-[#c5a059]">landing page bem feita</span> não é custo — é o investimento com maior retorno do seu negócio.&rdquo;
             </blockquote>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 lg:gap-x-20 border-t border-white/10 pt-16 md:pt-20 lg:pt-32">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 lg:gap-x-16 border-t border-white/10 pt-16 md:pt-20 lg:pt-24">
             {[
               { label: "CONVERSÕES", value: "+3x" },
               { label: "ENTREGA", value: "48h" },
@@ -391,9 +391,9 @@ export default function LandingPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="space-y-2 md:space-y-4 lg:space-y-6"
+                className="space-y-2 md:space-y-4 lg:space-y-5"
               >
-                <div className={`text-xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold ${stat.isBrand ? 'text-[#c5a059] text-[10px] md:text-sm lg:text-base tracking-[0.2em]' : ''}`}>
+                <div className={`text-xl md:text-4xl lg:text-3xl xl:text-5xl font-serif font-bold ${stat.isBrand ? 'text-[#c5a059] text-[10px] md:text-sm lg:text-base tracking-[0.2em]' : ''}`}>
                   {stat.value}
                 </div>
                 <div className="text-[8px] md:text-[10px] lg:text-xs tracking-[0.2em] uppercase text-gray-500 font-bold">
@@ -406,27 +406,27 @@ export default function LandingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-32 md:py-48 lg:py-64 px-6 text-center bg-[#050505] relative overflow-hidden">
+      <section className="py-32 md:py-40 lg:py-48 px-6 text-center bg-[#050505] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#c5a059]/10 via-transparent to-transparent" />
         
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative z-10 space-y-12 lg:space-y-16"
+          className="relative z-10 space-y-12 lg:space-y-14"
         >
-          <h2 className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-serif leading-tight max-w-4xl lg:max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-7xl lg:text-6xl xl:text-8xl font-serif leading-tight max-w-4xl lg:max-w-5xl mx-auto">
             Pronto para elevar o nível do seu <span className="text-[#c5a059] italic">posicionamento</span>?
           </h2>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-10">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-8">
             <motion.a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, boxShadow: '0 0 50px rgba(197, 160, 89, 0.4)' }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#c5a059] text-black px-12 py-5 lg:px-16 lg:py-7 text-sm lg:text-base font-bold tracking-widest uppercase rounded-full shadow-2xl shadow-[#c5a059]/30"
+              className="bg-[#c5a059] text-black px-12 py-5 lg:px-14 lg:py-6 text-sm lg:text-base font-bold tracking-widest uppercase rounded-full shadow-2xl shadow-[#c5a059]/30"
             >
               Solicitar Orçamento
             </motion.a>
